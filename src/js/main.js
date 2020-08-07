@@ -7,3 +7,7 @@ var instance = new vidbg('.video', {
     // overlayAlpha: 0.3 // The overlay alpha. Think of this as the last integer in RGBA()
   });
   var rellax = new Rellax(".rocket");
+  if(document.body.clientWidth < 576){
+    rellax.destroy();
+  }
+  AOS.init();
